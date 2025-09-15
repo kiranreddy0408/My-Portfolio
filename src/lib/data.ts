@@ -1,5 +1,117 @@
-import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon } from 'lucide-react';
+import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiJava, SiLangchain } from 'react-icons/si';
+
+const iconSize = "1.25rem";
+
+const skillIcons = {
+  python: (props: any) => <SiPython size={iconSize} {...props} />,
+  fastapi: (props: any) => <SiFastapi size={iconSize} {...props} />,
+  flask: (props: any) => <SiFlask size={iconSize} {...props} />,
+  react: (props: any) => <SiReact size={iconSize} {...props} />,
+  nodejs: (props: any) => <SiNodedotjs size={iconSize} {...props} />,
+  html5: (props: any) => <SiHtml5 size={iconSize} {...props} />,
+  css3: (props: any) => <SiCss3 size={iconSize} {...props} />,
+  javascript: (props: any) => <SiJavascript size={iconSize} {...props} />,
+  typescript: (props: any) => <SiTypescript size={iconSize} {...props} />,
+  tailwindcss: (props: any) => <SiTailwindcss size={iconSize} {...props} />,
+  git: (props: any) => <SiGit size={iconSize} {...props} />,
+  github: (props: any) => <SiGithub size={iconSize} {...props} />,
+  docker: (props: any) => <SiDocker size={iconSize} {...props} />,
+  postman: (props: any) => <SiPostman size={iconSize} {...props} />,
+  java: (props: any) => <SiJava size={iconSize} {...props} />,
+  langchain: (props: any) => <SiLangchain size={iconSize} {...props} />,
+  sql: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M20 17.4c-2.4.3-4.8.3-7.2 0-.3-2.3-.3-4.6 0-6.9 2.4-.3 4.8-.3 7.2 0M4 17.4c2.4.3 4.8.3 7.2 0-.3-2.3-.3-4.6 0-6.9-2.4-.3-4.8-.3-7.2 0M11.2 6.6C8.8 6.3 6.4 6.3 4 6.6c.3 2.3.3 4.6 0 6.9 2.4.3 4.8.3 7.2 0" />
+      <path d="M11.2 6.6c.3 2.3.3 4.6 0 6.9" />
+    </svg>
+  ),
+  rag: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="m15.87 3.5-3.37 3.37" />
+      <path d="m12.5 6.87 3.37-3.37" />
+      <path d="M3.5 15.87 6.87 12.5" />
+      <path d="m6.87 15.87 3.37-3.37" />
+      <path d="M9 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0Z" />
+      <path d="m14.5 14.5 4-4" />
+      <path d="m3 21 6-6" />
+    </svg>
+  ),
+  agents: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M12 8V4H8" />
+      <rect width="16" height="12" x="4" y="8" rx="2" />
+      <path d="M2 14h2" />
+      <path d="M20 14h2" />
+      <path d="M15 13v2" />
+      <path d="M9 13v2" />
+    </svg>
+  ),
+  vectorstores: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+      <path d="m3.27 6.96 8.73 5.05 8.73-5.05" />
+      <path d="m12 22.08V12" />
+    </svg>
+  ),
+  oop: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M16 16h2a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-2" />
+      <path d="M8 8H6a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2" />
+      <path d="M12 2v2" />
+      <path d="M12 20v2" />
+    </svg>
+  ),
+  codereview: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M10.25 4.75 3.75 12l6.5 7.25" />
+      <path d="M13.75 19.25 20.25 12l-6.5-7.25" />
+      <path d="m14 15-4-6" />
+    </svg>
+  ),
+  testing: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
+      <path d="M12 18a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+      <path d="M12 14v-1" />
+      <path d="M12 8V7" />
+      <path d="m15 11-1-1" />
+      <path d="m9 17-1-1" />
+    </svg>
+  )
+};
+
+export const skillsData: Record<string, { name: string; icon: (props: any) => JSX.Element }[]> = {
+  "Languages": [
+    { name: "Java", icon: skillIcons.java },
+    { name: "Python", icon: skillIcons.python },
+    { name: "SQL", icon: skillIcons.sql },
+  ],
+  "Web Development": [
+    { name: "FastAPI", icon: skillIcons.fastapi },
+    { name: "Flask", icon: skillIcons.flask },
+    { name: "React", icon: skillIcons.react },
+    { name: "Node.js", icon: skillIcons.nodejs },
+    { name: "HTML/CSS", icon: skillIcons.html5 },
+  ],
+  "AI/ML Tools": [
+    { name: "LangChain", icon: skillIcons.langchain },
+    { name: "RAG", icon: skillIcons.rag },
+    { name: "Agentic Workflows", icon: skillIcons.agents },
+    { name: "Vector Stores", icon: skillIcons.vectorstores },
+  ],
+  "DevOps Tools": [
+    { name: "Git", icon: skillIcons.git },
+    { name: "GitHub", icon: skillIcons.github },
+    { name: "Postman", icon: skillIcons.postman },
+    { name: "Docker", icon: skillIcons.docker },
+  ],
+  "Software Engineering": [
+    { name: "OOP", icon: skillIcons.oop },
+    { name: "Code Review", icon: skillIcons.codereview },
+    { name: "Automation Testing", icon: skillIcons.testing },
+  ],
+};
 
 export const portfolioData = {
   name: "Kiran Reddy Boojala",
@@ -90,13 +202,6 @@ export const portfolioData = {
       grade: "9.8 GPA",
     },
   ],
-  skills: {
-    "Languages": ["Java", "Python", "SQL"],
-    "Web Development": ["FastAPI", "Flask", "React", "Node.js", "HTML/CSS"],
-    "AI/ML Tools": ["LangChain", "RAG", "Agentic Workflows", "Vector Stores (FAISS, Chroma)"],
-    "DevOps Tools": ["Git", "GitHub", "Postman", "Docker"],
-    "Software Engineering": ["OOP", "Code Review", "Automation Testing"],
-  },
   achievements: [
     {
       title: "Winner of National Level Hackathon",
