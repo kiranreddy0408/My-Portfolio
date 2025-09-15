@@ -14,7 +14,7 @@ export function Header() {
           }}
       />
 
-      <div className="container mx-auto max-w-6xl px-4 pt-16 md:pt-24 relative z-10">
+      <div className="container mx-auto max-w-6xl px-4 pt-24 md:pt-28 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold">
