@@ -10,7 +10,7 @@ export function Projects() {
     <Section id="projects" title="Projects">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {portfolioData.projects.map((project, index) => (
-          <Card key={index} className="flex flex-col bg-card border-none shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300">
+          <Card key={index} className="flex flex-col bg-card border shadow-lg hover:transform hover:-translate-y-2 transition-transform duration-300">
             <CardHeader>
               <CardTitle className="text-xl font-bold">{project.title}</CardTitle>
             </CardHeader>

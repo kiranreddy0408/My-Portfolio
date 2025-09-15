@@ -7,7 +7,7 @@ export function SkillsAndEducation() {
   return (
     <div className="grid md:grid-cols-2 gap-16">
       <Section id="skills" title="Technical Skills" Icon={sectionIcons.skills}>
-        <Card className="bg-card/50 border-none">
+        <Card className="bg-card border">
           <CardContent className="p-6">
             <div className="space-y-6">
               {Object.entries(portfolioData.skills).map(([category, skills]) => (
@@ -28,7 +28,7 @@ export function SkillsAndEducation() {
       <Section id="education" title="Education" Icon={sectionIcons.education}>
         <div className="space-y-6">
           {portfolioData.education.map((edu, index) => (
-            <Card key={index} className="bg-card/50 border-none">
+            <Card key={index} className="bg-card border">
               <CardHeader>
                 <div className="flex flex-col sm:flex-row justify-between items-start">
                   <div>

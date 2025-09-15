@@ -10,27 +10,26 @@ export function Header() {
   ];
 
   return (
-    <section id="home" className="relative bg-[#121212] text-white overflow-hidden pb-0">
-      <div 
+    <section id="home" className="relative bg-background text-white overflow-hidden">
+       <div 
           className="absolute inset-0 z-0" 
           style={{
-              backgroundImage: 'radial-gradient(ellipse at center, rgba(38, 38, 38, 1) 0%, rgba(18, 18, 18, 1) 100%)'
+              backgroundImage: 'radial-gradient(ellipse at center, rgba(30, 30, 30, 1) 0%, rgba(18, 18, 18, 1) 100%)'
           }}
       />
-
       <div className="container mx-auto max-w-6xl px-4 pt-24 md:pt-28 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-center md:text-left">
             <h1 className="text-4xl md:text-6xl font-bold">
-              Hello<span className="text-[#E4602F]">.</span><br />
+              Hello<span className="text-primary">.</span><br />
               I&apos;m {portfolioData.name.split(' ')[0]}
             </h1>
             <TypingEffect headlines={headlines} className="text-3xl md:text-5xl font-semibold text-white/90" />
             <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
-              <Button asChild size="lg" className="bg-[#E4602F] text-white hover:bg-[#d35420]">
+              <Button asChild size="lg">
                 <a href="mailto:kiranreddy.b0408@gmail.com">Let's Collaborate</a>
               </Button>
-              <Button asChild variant="outline" size="lg" className="border-[#E4602F] text-white hover:bg-[#E4602F]/10">
+              <Button asChild variant="outline" size="lg">
                 <a href="/Kiran_Reddy_Boojala_Resume.pdf" download>My resume</a>
               </Button>
             </div>
@@ -38,7 +37,7 @@ export function Header() {
               {socialLinks.map((social) => {
                 const Icon = contactIcons[social.name];
                 return (
-                  <Button asChild variant="ghost" size="icon" key={social.name} className="text-white hover:bg-white/10 hover:text-white">
+                  <Button asChild variant="ghost" size="icon" key={social.name} className="text-white hover:bg-white/10 hover:text-primary">
                     <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
                       <Icon className="size-6" />
                     </a>
@@ -48,16 +47,16 @@ export function Header() {
             </div>
           </div>
           
-          <div className="relative h-[350px] md:h-[500px]">
+          <div className="relative h-[300px] md:h-[450px]">
             <div className="absolute inset-0 flex justify-center items-center">
               <div 
-                className="absolute w-[300px] h-[300px] md:w-[480px] md:h-[480px] rounded-full blur-2xl" 
+                className="absolute w-[280px] h-[280px] md:w-[420px] md:h-[420px] rounded-full blur-2xl" 
                 style={{
-                  backgroundImage: 'radial-gradient(circle, rgba(228, 96, 47, 0.4) 30%, transparent 70%)'
+                  backgroundImage: 'radial-gradient(circle, rgba(228, 96, 47, 0.3) 30%, transparent 70%)'
                 }} 
               />
               
-              <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px] rounded-full border-8 border-[#E4602F]/80" />
+              <div className="absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full border-4 border-primary/80" />
               
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -67,7 +66,7 @@ export function Header() {
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
                 strokeWidth="1.5"
-                className="absolute top-1/4 left-0 md:left-4 text-[#E4602F]/80 size-20 md:size-28 transform -translate-y-1/2"
+                className="absolute top-1/4 left-0 text-primary/80 size-16 md:size-24 transform -translate-y-1/2"
               >
                 <path d="m15 18-6-6 6-6" />
               </svg>
@@ -79,7 +78,7 @@ export function Header() {
                 strokeLinecap="round" 
                 strokeLinejoin="round"
                 strokeWidth="1.5" 
-                className="absolute bottom-1/4 right-0 md:right-4 text-[#E4602F]/80 size-20 md:size-28 transform translate-y-1/2"
+                className="absolute bottom-1/4 right-0 text-primary/80 size-16 md:size-24 transform translate-y-1/2"
               >
                 <path d="m9 6 6 6-6 6" />
               </svg>

@@ -7,7 +7,7 @@ export function Experience() {
     <Section id="experience" title="Experience">
       <div className="space-y-8">
         {portfolioData.experience.map((exp, index) => (
-          <Card key={index} className="bg-card border-none shadow-lg">
+          <Card key={index} className="bg-card border shadow-lg">
             <CardHeader>
               <div className="flex flex-col sm:flex-row justify-between items-start">
                 <div>
