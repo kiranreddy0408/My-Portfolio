@@ -1,6 +1,6 @@
 import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon } from 'lucide-react';
 import { FaJava } from 'react-icons/fa';
-import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiLangchain } from 'react-icons/si';
+import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiLangchain, SiPostgresql, SiOpenai } from 'react-icons/si';
 
 const iconSize = "1.25rem";
 
@@ -21,6 +21,8 @@ const skillIcons = {
   postman: (props: any) => <SiPostman size={iconSize} {...props} />,
   java: (props: any) => <FaJava size={iconSize} {...props} />,
   langchain: (props: any) => <SiLangchain size={iconSize} {...props} />,
+  postgresql: (props: any) => <SiPostgresql size={iconSize} {...props} />,
+  openai: (props: any) => <SiOpenai size={iconSize} {...props} />,
   sql: (props: any) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
       <path d="M20 17.4c-2.4.3-4.8.3-7.2 0-.3-2.3-.3-4.6 0-6.9 2.4-.3 4.8-.3 7.2 0M4 17.4c2.4.3 4.8.3 7.2 0-.3-2.3-.3-4.6 0-6.9-2.4-.3-4.8-.3-7.2 0M11.2 6.6C8.8 6.3 6.4 6.3 4 6.6c.3 2.3.3 4.6 0 6.9 2.4.3 4.8.3 7.2 0" />
@@ -79,14 +81,23 @@ const skillIcons = {
       <path d="m15 11-1-1" />
       <path d="m9 17-1-1" />
     </svg>
-  )
+  ),
+  gemini: (props: any) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+      <path d="M12 18V9" />
+    </svg>
+  ),
 };
 
 export const skillsData: Record<string, { name: string; icon: (props: any) => JSX.Element }[]> = {
   "Languages": [
     { name: "Java", icon: skillIcons.java },
     { name: "Python", icon: skillIcons.python },
+  ],
+  "Databases": [
     { name: "SQL", icon: skillIcons.sql },
+    { name: "PostgreSQL", icon: skillIcons.postgresql },
   ],
   "Web Development": [
     { name: "FastAPI", icon: skillIcons.fastapi },
@@ -96,6 +107,8 @@ export const skillsData: Record<string, { name: string; icon: (props: any) => JS
     { name: "HTML/CSS", icon: skillIcons.html5 },
   ],
   "AI/ML Tools": [
+    { name: "Gemini", icon: skillIcons.gemini },
+    { name: "OpenAI", icon: skillIcons.openai },
     { name: "LangChain", icon: skillIcons.langchain },
     { name: "RAG", icon: skillIcons.rag },
     { name: "Agentic Workflows", icon: skillIcons.agents },
