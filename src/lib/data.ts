@@ -3,18 +3,18 @@ import type { LucideIcon } from 'lucide-react';
 
 export const portfolioData = {
   name: "Kiran Reddy Boojala",
-  title: "Software Developer",
+  title: "AI Agent Developer",
   about: {
-    description: "I started my software journey from scratch. Through that, I learned to love the process of creating. Since then, this has led me to software development as it fulfills my love for learning and building things.",
+    description: "My fascination isn't just with writing code; it's with creating intelligent systems that solve real-world problems. I'm a Software Developer with a core focus on Artificial Intelligence, driven to build autonomous agents and intuitive applications that can reason, learn, and adapt. This passion for innovation led my team and me to win 1st Prize in a National Level AI Hackathon for our personalized learning platform. I thrive on transforming complex challenges into elegant, efficient, and intelligent software solutions.",
     stats: [
       { value: "1+", label: "Years of experience" },
       { value: "5+", label: "Completed Projects" },
       { value: "95%", label: "Client satisfaction" },
     ],
     services: [
-      { title: "Website Development", icon: Code2 },
-      { title: "App Development", icon: AppWindow },
-      { title: "Database Management", icon: Database },
+      { title: "AI-Powered Web Applications", icon: Code2 },
+      { title: "Intelligent Agent Development", icon: AppWindow },
+      { title: "API & Database Integration", icon: Database },
     ]
   },
   contact: {
@@ -90,9 +90,9 @@ B. K. Reddy, “Enhancing heart disease forecasting through advanced predictive 
       duration: "March 2023 – May 2024",
       location: "Hyderabad, India",
       points: [
-        "Designed, developed, and debugged web applications, improving performance and reducing bugs by 70%.",
-        "Integrated APIs and databases handling 1000+ records, reducing response time by 30%.",
-        "Collaborated in an agile team of 10-15, implementing scalable features and conducting performance testing across 50+ cases.",
+        "Engineered and optimized full-stack web applications, architecting solutions that slashed bugs by 70% and significantly boosted overall performance.",
+        "Architected robust API and database integrations for systems handling over 1000 records, cutting server response time by 30% through efficient data processing.",
+        "Drove the implementation of scalable features within a 15-member agile team, validating application reliability with over 50 distinct performance test cases.",
         "Project I: GPTfu.com – Cataloged 5,000+ AI tools, created trial feature for premium tools, improving discoverability by 40% and engagement by 35%.",
         "Project II: AI-Powered Communication Card Generator – Built a scalable platform generating 100+ custom cards monthly, enhancing engagement by 30%.",
       ],
@@ -103,7 +103,7 @@ B. K. Reddy, “Enhancing heart disease forecasting through advanced predictive 
       duration: "Jan 2023 – Mar 2023",
       location: "Remote",
       points: [
-        "Annotated over 2000 images to support development of high-quality ML models.",
+        "Executed precise data annotation for over 2,000 images, providing the critical ground-truth data essential for training high-accuracy machine learning models.",
       ],
     },
   ],
@@ -111,19 +111,19 @@ B. K. Reddy, “Enhancing heart disease forecasting through advanced predictive 
     {
       title: "VizAgent",
       tech: ["FastAPI", "Gemini", "LangChain", "Plotly"],
-      description: "Built an AI agent to query databases in natural language, auto-generating SQL via LLMs. Integrated LangChain for 90%+ accuracy, reducing analysis time by 70%.",
+      description: "An intelligent analytics agent that empowers users to talk to their data. VizAgent translates plain English into complex SQL queries, fetching and visualizing insights instantly. With over 90% query accuracy, it reduces data analysis time by 70%, making data-driven decisions accessible to everyone.",
       github: "https://github.com/kiranreddy0408", 
     },
     {
       title: "Todo Summary Agent",
       tech: ["React", "Node.js", "Slack", "Gemini"],
-      description: "A productivity app to manage todos, summarize tasks with Gemini LLM, and send summaries to Slack.",
+      description: "Cutting through the clutter of daily tasks. This full-stack productivity tool uses the Gemini LLM to intelligently summarize your to-do list and delivers a concise, actionable digest directly to your Slack, ensuring you focus on what truly matters.",
       github: "https://github.com/kiranreddy0408",
     },
     {
-      title: "EduElite",
+      title: "EduElite (1st Prize, National AI Hackathon)",
       tech: ["AI", "React", "Node.js"],
-      description: "An AI-powered learning prototype for a national hackathon. Features AI-driven quizzes, chat, and mock interviews, boosting engagement by 30-40%.",
+      description: "A prize-winning prototype for the future of personalized education. This AI-powered platform delivers adaptive quizzes, an interactive AI tutor, and mock interviews, creating a dynamic learning journey that boosted user engagement by up to 40%.",
       github: "https://github.com/kiranreddy0408",
     },
   ],
