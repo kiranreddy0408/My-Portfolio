@@ -1,9 +1,13 @@
-import { portfolioData } from "@/lib/data";
+import { portfolioData, contactIcons } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 import { TypingEffect } from "./typing-effect";
 
 export function Header() {
   const headlines = ["Software Engineer", "Building AI Agents", "Programmer"];
+  const socialLinks = [
+    { name: "linkedin", href: portfolioData.contact.social.linkedin },
+    { name: "github", href: portfolioData.contact.social.github },
+  ];
 
   return (
     <section id="home" className="relative bg-[#121212] text-white overflow-hidden pb-0">
@@ -29,6 +33,18 @@ export function Header() {
               <Button asChild variant="outline" size="lg" className="border-[#E4602F] text-white hover:bg-[#E4602F]/10">
                 <a href="/Kiran_Reddy_Boojala_Resume.pdf" download>My resume</a>
               </Button>
+            </div>
+            <div className="flex items-center justify-center md:justify-start gap-2 pt-4">
+              {socialLinks.map((social) => {
+                const Icon = contactIcons[social.name];
+                return (
+                  <Button asChild variant="ghost" size="icon" key={social.name} className="text-white hover:bg-white/10 hover:text-white">
+                    <a href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.name}>
+                      <Icon className="size-6" />
+                    </a>
+                  </Button>
+                );
+              })}
             </div>
           </div>
           
