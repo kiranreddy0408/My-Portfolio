@@ -22,9 +22,9 @@ export function Header() {
       </div>
       <div className="relative flex justify-center items-center md:order-2">
         <div className="absolute w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-primary/20 blur-3xl"></div>
-        <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-card border-2 border-primary">
+        <div className="relative w-64 h-64 sm:w-100 sm:h-80 lg:w-96 lg:h-96">
             <Image
-              src="/professional-pfp.png"
+              src="/pfp.png"
               alt="Portrait of Kiran Reddy Boojala"
               fill
               className="object-contain object-bottom p-2"
