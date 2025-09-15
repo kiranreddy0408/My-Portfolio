@@ -24,11 +24,11 @@ export function Header() {
         <div className="relative h-[400px] md:h-[600px] mt-[-100px] md:mt-0">
           <div className="absolute inset-0 flex justify-center items-end">
             <Image
-              src="/professional-pfp.png"
+              src="/pfp4.png"
               alt="Portrait of Kiran Reddy Boojala"
               width={500}
-              height={750}
-              className="object-contain object-bottom"
+              height={550}
+              className="object-contain object-bottom w-[80%] h-full"
               priority
               data-ai-hint="man portrait"
             />
