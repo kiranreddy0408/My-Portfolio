@@ -14,9 +14,9 @@ export default function PortfolioPage() {
       <Navbar />
       <main className="flex-grow">
         <Header />
-        <div className="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8 space-y-20 md:space-y-28">
+        <SkillsMarquee />
+        <div className="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8 space-y-20 md:space-y-28 mt-20 md:mt-28">
           <Projects />
-          <SkillsMarquee />
           <SkillsAndEducation />
           <About />
           <Experience />
