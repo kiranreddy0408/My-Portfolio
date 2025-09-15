@@ -2,7 +2,6 @@ import { Header } from "@/components/portfolio/header";
 import { Experience } from "@/components/portfolio/experience";
 import { Projects } from "@/components/portfolio/projects";
 import { SkillsAndEducation } from "@/components/portfolio/skills-education";
-import { ResumeSummaryGenerator } from "@/components/portfolio/resume-summary";
 import { Separator } from "@/components/ui/separator";
 
 export default function PortfolioPage() {
@@ -16,8 +15,6 @@ export default function PortfolioPage() {
           <Projects />
           <Separator className="bg-border/50" />
           <SkillsAndEducation />
-          <Separator className="bg-border/50" />
-          <ResumeSummaryGenerator />
         </main>
       </div>
     </div>
