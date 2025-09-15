@@ -1,5 +1,5 @@
 import { Section } from "./section";
-import { skillsData } from "@/lib/data";
+import { skillsData } from "@/lib/data.tsx";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export function Skills() {

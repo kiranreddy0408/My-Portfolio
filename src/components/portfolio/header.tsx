@@ -1,4 +1,4 @@
-import { portfolioData, contactIcons } from "@/lib/data";
+import { portfolioData, contactIcons } from "@/lib/data.tsx";
 import { Button } from "@/components/ui/button";
 import { TypingEffect } from "./typing-effect";
 

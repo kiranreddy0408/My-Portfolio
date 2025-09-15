@@ -1,4 +1,4 @@
-import { portfolioData } from "@/lib/data";
+import { portfolioData } from "@/lib/data.tsx";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import { portfolioData } from '@/lib/data';
+import { portfolioData } from '@/lib/data.tsx';
 import { Button } from '@/components/ui/button';
 import { useScrollTo } from '@/lib/utils';
 import { cn } from '@/lib/utils';

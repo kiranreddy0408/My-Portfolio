@@ -1,5 +1,6 @@
 import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon } from 'lucide-react';
-import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiJava, SiLangchain } from 'react-icons/si';
+import { FaJava } from 'react-icons/fa';
+import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiLangchain } from 'react-icons/si';
 
 const iconSize = "1.25rem";
 
@@ -18,7 +19,7 @@ const skillIcons = {
   github: (props: any) => <SiGithub size={iconSize} {...props} />,
   docker: (props: any) => <SiDocker size={iconSize} {...props} />,
   postman: (props: any) => <SiPostman size={iconSize} {...props} />,
-  java: (props: any) => <SiJava size={iconSize} {...props} />,
+  java: (props: any) => <FaJava size={iconSize} {...props} />,
   langchain: (props: any) => <SiLangchain size={iconSize} {...props} />,
   sql: (props: any) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
@@ -209,6 +210,7 @@ export const portfolioData = {
     },
   ],
   publication: "B. K. Reddy, “Enhancing heart disease forecasting through advanced predictive modeling,” in Proceedings of the 5th International Conference on ICIRCA.",
+  resume: ""
 };
 
 export const sectionIcons: { [key: string]: LucideIcon } = {
