@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Header() {
   return (
-    <section id="home" className="relative bg-[#121212] text-white overflow-hidden pb-20">
+    <section id="home" className="relative bg-[#121212] text-white overflow-hidden">
       <div 
           className="absolute inset-0 z-0" 
           style={{
