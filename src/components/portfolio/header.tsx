@@ -32,16 +32,16 @@ export function Header() {
             </div>
           </div>
           
-          <div className="relative h-[400px] md:h-[600px]">
+          <div className="relative h-[350px] md:h-[500px]">
             <div className="absolute inset-0 flex justify-center items-center">
               <div 
-                className="absolute w-[320px] h-[320px] md:w-[520px] md:h-[520px] rounded-full blur-2xl" 
+                className="absolute w-[300px] h-[300px] md:w-[480px] md:h-[480px] rounded-full blur-2xl" 
                 style={{
                   backgroundImage: 'radial-gradient(circle, rgba(228, 96, 47, 0.4) 30%, transparent 70%)'
                 }} 
               />
               
-              <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full border-8 border-[#E4602F]/80" />
+              <div className="absolute w-[280px] h-[280px] md:w-[450px] md:h-[450px] rounded-full border-8 border-[#E4602F]/80" />
               
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -51,7 +51,7 @@ export function Header() {
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
                 strokeWidth="1.5"
-                className="absolute top-1/3 left-0 md:left-8 text-[#E4602F]/80 size-24 md:size-32 transform -translate-y-1/2"
+                className="absolute top-1/4 left-0 md:left-4 text-[#E4602F]/80 size-20 md:size-28 transform -translate-y-1/2"
               >
                 <path d="m15 18-6-6 6-6" />
               </svg>
@@ -63,7 +63,7 @@ export function Header() {
                 strokeLinecap="round" 
                 strokeLinejoin="round"
                 strokeWidth="1.5" 
-                className="absolute bottom-1/3 right-0 md:right-8 text-[#E4602F]/80 size-24 md:size-32 transform translate-y-1/2"
+                className="absolute bottom-1/4 right-0 md:right-4 text-[#E4602F]/80 size-20 md:size-28 transform translate-y-1/2"
               >
                 <path d="m9 6 6 6-6 6" />
               </svg>
