@@ -1,4 +1,4 @@
-import { portfolioData, sectionIcons } from "@/lib/data";
+import { portfolioData } from "@/lib/data";
 import { Section } from "./section";
 
 export function About() {
@@ -7,7 +7,18 @@ export function About() {
   return (
     <Section id="about" title="About Me">
       <div className="grid md:grid-cols-3 gap-12">
-        <div className="md:col-span-1 space-y-6">
+        <div className="md:col-span-2 space-y-6">
+          <p className="text-muted-foreground text-lg text-center md:text-left">{description}</p>
+          <div className="flex flex-wrap gap-8 justify-center md:justify-start">
+            {stats.map((stat, index) => (
+              <div key={index} className="text-center md:text-left">
+                <p className="text-4xl font-bold text-primary">{stat.value}</p>
+                <p className="text-muted-foreground">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="md:col-span-1 space-y-6 flex flex-col items-center md:items-start">
           {services.map((service, index) => {
             const Icon = service.icon;
             return (
@@ -19,17 +30,6 @@ export function About() {
               </div>
             );
           })}
-        </div>
-        <div className="md:col-span-2 space-y-6">
-          <p className="text-muted-foreground text-lg">{description}</p>
-          <div className="flex flex-wrap gap-8">
-            {stats.map((stat, index) => (
-              <div key={index}>
-                <p className="text-4xl font-bold text-primary">{stat.value}</p>
-                <p className="text-muted-foreground">{stat.label}</p>
-              </div>
-            ))}
-          </div>
         </div>
       </div>
     </Section>

@@ -9,10 +9,10 @@ import { cn } from '@/lib/utils';
 
 const navLinks = [
   { name: 'Home', id: 'home' },
-  { name: 'About', id: 'about' },
   { name: 'Projects', id: 'projects' },
-  { name: 'Experience', id: 'experience' },
   { name: 'Skills', id: 'skills' },
+  { name: 'About', id: 'about' },
+  { name: 'Experience', id: 'experience' },
 ];
 
 export function Navbar() {
@@ -26,7 +26,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm">
-      <div className="container mx-auto max-w-6xl flex items-center justify-between h-20">
+      <div className="container mx-auto max-w-6xl flex items-center justify-between h-20 px-4 sm:px-6 lg:px-8">
         <h1 className="text-2xl font-bold font-headline">
           {portfolioData.name.split(' ')[0]} <span className="text-primary">{portfolioData.name.split(' ')[1]}</span>
         </h1>
