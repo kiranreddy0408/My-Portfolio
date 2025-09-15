@@ -22,15 +22,16 @@ export function Header() {
       </div>
       <div className="relative flex justify-center items-center md:order-2">
         <div className="absolute w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-primary/20 blur-3xl"></div>
-        <Image
-          src="/professional-pfp.png"
-          alt="Portrait of Kiran Reddy Boojala"
-          width={400}
-          height={400}
-          className="rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 z-10"
-          priority
-          data-ai-hint="man portrait"
-        />
+        <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden bg-card border-2 border-primary">
+            <Image
+              src="/professional-pfp.png"
+              alt="Portrait of Kiran Reddy Boojala"
+              fill
+              className="object-contain object-bottom p-2"
+              priority
+              data-ai-hint="man portrait"
+            />
+        </div>
       </div>
     </section>
   );
