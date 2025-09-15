@@ -10,8 +10,9 @@ import { cn } from '@/lib/utils';
 const navLinks = [
   { name: 'Home', id: 'home' },
   { name: 'About', id: 'about' },
-  { name: 'Experience', id: 'experience' },
   { name: 'Projects', id: 'projects' },
+  { name: 'Experience', id: 'experience' },
+  { name: 'Skills', id: 'skills' },
 ];
 
 export function Navbar() {
