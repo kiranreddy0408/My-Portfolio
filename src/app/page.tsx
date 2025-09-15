@@ -12,9 +12,9 @@ export default function PortfolioPage() {
     <div className="bg-background text-foreground min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <div className="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8 space-y-20 md:space-y-28">
-          <Header />
-          <SkillsMarquee />
+        <Header />
+        <SkillsMarquee />
+        <div className="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8 space-y-20 md:space-y-28 mt-20">
           <About />
           <Experience />
           <Projects />

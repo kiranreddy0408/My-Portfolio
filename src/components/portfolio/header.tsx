@@ -4,33 +4,35 @@ import { Button } from '@/components/ui/button';
 
 export function Header() {
   return (
-    <section id="home" className="grid md:grid-cols-2 gap-12 items-center pt-16 md:pt-24">
-      <div className="space-y-4 md:order-1">
-        <h1 className="font-headline text-5xl md:text-6xl font-bold">
-          Hello<span className="text-primary">.</span><br />
-          I&apos;m {portfolioData.name.split(' ')[0]}
-        </h1>
-        <h2 className="text-4xl md:text-5xl font-semibold text-primary-foreground/90">{portfolioData.title}</h2>
-        <div className="flex items-center gap-4 pt-4">
-          <Button asChild size="lg">
-            <a href="mailto:kiranreddy.b0408@gmail.com">Get a project?</a>
-          </Button>
-          <Button asChild variant="outline" size="lg">
-            <a href="/Kiran_Reddy_Boojala_Resume.pdf" download>My resume</a>
-          </Button>
+    <section id="home" className="container mx-auto max-w-6xl pt-16 md:pt-24 relative">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div className="space-y-4 z-10">
+          <h1 className="font-headline text-5xl md:text-6xl font-bold">
+            Hello<span className="text-primary">.</span><br />
+            I&apos;m {portfolioData.name.split(' ')[0]}
+          </h1>
+          <h2 className="text-4xl md:text-5xl font-semibold text-primary-foreground/90">{portfolioData.title}</h2>
+          <div className="flex items-center gap-4 pt-4">
+            <Button asChild size="lg">
+              <a href="mailto:kiranreddy.b0408@gmail.com">Get a project?</a>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <a href="/Kiran_Reddy_Boojala_Resume.pdf" download>My resume</a>
+            </Button>
+          </div>
         </div>
-      </div>
-      <div className="relative flex justify-center items-center md:order-2">
-        <div className="absolute w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-primary/20 blur-3xl"></div>
-        <div className="relative w-64 h-64 sm:w-100 sm:h-80 lg:w-96 lg:h-96">
+        <div className="relative h-[400px] md:h-[600px] mt-[-100px] md:mt-0">
+          <div className="absolute inset-0 flex justify-center items-end">
             <Image
-              src="/pfp.png"
+              src="/professional-pfp.png"
               alt="Portrait of Kiran Reddy Boojala"
-              fill
-              className="object-contain object-bottom p-2"
+              width={500}
+              height={750}
+              className="object-contain object-bottom"
               priority
               data-ai-hint="man portrait"
             />
+          </div>
         </div>
       </div>
     </section>
