@@ -17,11 +17,11 @@ export function Header() {
       <div className="container mx-auto max-w-6xl px-4 pt-24 md:pt-28 relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4 text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl font-bold">
+            <h1 className="text-4xl md:text-6xl font-bold">
               Hello<span className="text-[#E4602F]">.</span><br />
               I&apos;m {portfolioData.name.split(' ')[0]}
             </h1>
-            <TypingEffect headlines={headlines} className="text-4xl md:text-5xl font-semibold text-white/90" />
+            <TypingEffect headlines={headlines} className="text-3xl md:text-5xl font-semibold text-white/90" />
             <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
               <Button asChild size="lg" className="bg-[#E4602F] text-white hover:bg-[#d35420]">
                 <a href="mailto:kiranreddy.b0408@gmail.com">Let's Collaborate</a>
