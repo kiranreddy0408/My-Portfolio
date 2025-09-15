@@ -1,11 +1,8 @@
 import Image from 'next/image';
 import { portfolioData } from '@/lib/data';
 import { Button } from '@/components/ui/button';
-import { placeholderImages } from '@/lib/placeholder-images';
 
 export function Header() {
-  const profileImage = placeholderImages.find(img => img.id === 'profile-picture');
-
   return (
     <section id="home" className="grid md:grid-cols-2 gap-12 items-center pt-16 md:pt-24">
       <div className="space-y-4 md:order-1">
@@ -25,17 +22,15 @@ export function Header() {
       </div>
       <div className="relative flex justify-center items-center md:order-2">
         <div className="absolute w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full bg-primary/20 blur-3xl"></div>
-        {profileImage && (
-          <Image
-            src={profileImage.imageUrl}
-            alt="Portrait of Kiran Reddy Boojala"
-            width={400}
-            height={400}
-            className="rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 z-10"
-            priority
-            data-ai-hint={profileImage.imageHint}
-          />
-        )}
+        <Image
+          src="/professional-pfp.png"
+          alt="Portrait of Kiran Reddy Boojala"
+          width={400}
+          height={400}
+          className="rounded-full object-cover w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 z-10"
+          priority
+          data-ai-hint="man portrait"
+        />
       </div>
     </section>
   );
