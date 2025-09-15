@@ -5,14 +5,14 @@ import { Section } from "./section";
 
 export function SkillsAndEducation() {
   return (
-    <div className="space-y-12">
+    <div className="grid md:grid-cols-2 gap-16">
       <Section id="skills" title="Technical Skills" Icon={sectionIcons.skills}>
-        <Card className="bg-card/50 border-border/50">
+        <Card className="bg-card/50 border-none">
           <CardContent className="p-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+            <div className="space-y-6">
               {Object.entries(portfolioData.skills).map(([category, skills]) => (
                 <div key={category}>
-                  <h3 className="font-semibold text-lg mb-3 text-foreground">{category}</h3>
+                  <h3 className="font-semibold text-lg mb-3 text-primary">{category}</h3>
                   <div className="flex flex-wrap gap-2">
                     {skills.map((skill) => (
                       <Badge key={skill} variant="secondary">{skill}</Badge>
@@ -26,9 +26,9 @@ export function SkillsAndEducation() {
       </Section>
       
       <Section id="education" title="Education" Icon={sectionIcons.education}>
-        <div className="space-y-4">
+        <div className="space-y-6">
           {portfolioData.education.map((edu, index) => (
-            <Card key={index} className="bg-card/50 border-border/50">
+            <Card key={index} className="bg-card/50 border-none">
               <CardHeader>
                 <div className="flex flex-col sm:flex-row justify-between items-start">
                   <div>
@@ -43,25 +43,6 @@ export function SkillsAndEducation() {
               </CardHeader>
             </Card>
           ))}
-        </div>
-      </Section>
-
-      <Section id="achievements" title="Achievements & Publications" Icon={sectionIcons.achievements}>
-        <div className="space-y-4">
-          {portfolioData.achievements.map((ach, index) => (
-            <Card key={index} className="bg-card/50 border-border/50">
-              <CardHeader>
-                <CardTitle className="text-lg font-semibold">{ach.title}</CardTitle>
-                <p className="text-muted-foreground">{ach.description}</p>
-              </CardHeader>
-            </Card>
-          ))}
-          <Card className="bg-card/50 border-border/50">
-            <CardHeader>
-              <CardTitle className="text-lg font-semibold">Publication</CardTitle>
-              <p className="text-muted-foreground italic">{portfolioData.publication}</p>
-            </CardHeader>
-          </Card>
         </div>
       </Section>
     </div>

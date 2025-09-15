@@ -1,9 +1,22 @@
-import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github } from 'lucide-react';
+import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 
 export const portfolioData = {
   name: "Kiran Reddy Boojala",
-  title: "Software Developer & AI Enthusiast",
+  title: "Software Developer",
+  about: {
+    description: "I started my software journey from scratch. Through that, I learned to love the process of creating. Since then, this has led me to software development as it fulfills my love for learning and building things.",
+    stats: [
+      { value: "1+", label: "Years of experience" },
+      { value: "5+", label: "Completed Projects" },
+      { value: "95%", label: "Client satisfaction" },
+    ],
+    services: [
+      { title: "Website Development", icon: Code2 },
+      { title: "App Development", icon: AppWindow },
+      { title: "Database Management", icon: Database },
+    ]
+  },
   contact: {
     email: "kiranreddy.b0408@gmail.com",
     phone: "+91 9390476853",
@@ -62,7 +75,7 @@ Winner of National Level Hackathon: Secured 1st prize in Education (AI) category
 
 Technical Skills
 Languages: Java, Python, SQL
-Web Development: FastAPI, Flask, React (Basic), HTML/CSS
+Web Development: FastAPI, Flask, React, Node.js, HTML/CSS
 AI/ML Tools: LangChain, RAG, Agentic Workflows, Vector Stores (FAISS, Chroma)
 DevOps Tools: Git, GitHub, Postman, Docker (Basic), VS Code
 Software Engineering: OOP, Code Review, Automation Testing
@@ -136,9 +149,9 @@ B. K. Reddy, “Enhancing heart disease forecasting through advanced predictive 
   ],
   skills: {
     "Languages": ["Java", "Python", "SQL"],
-    "Web Development": ["FastAPI", "Flask", "React (Basic)", "HTML/CSS"],
+    "Web Development": ["FastAPI", "Flask", "React", "Node.js", "HTML/CSS"],
     "AI/ML Tools": ["LangChain", "RAG", "Agentic Workflows", "Vector Stores (FAISS, Chroma)"],
-    "DevOps Tools": ["Git", "GitHub", "Postman", "Docker (Basic)", "VS Code"],
+    "DevOps Tools": ["Git", "GitHub", "Postman", "Docker"],
     "Software Engineering": ["OOP", "Code Review", "Automation Testing"],
   },
   achievements: [
@@ -155,7 +168,8 @@ export const sectionIcons: { [key: string]: LucideIcon } = {
   projects: FolderGit2,
   education: GraduationCap,
   skills: Code,
-  achievements: Award
+  achievements: Award,
+  about: User,
 };
 
 export const contactIcons: { [key: string]: LucideIcon } = {
