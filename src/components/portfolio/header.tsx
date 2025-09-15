@@ -1,9 +1,12 @@
 import { portfolioData } from "@/lib/data";
 import { Button } from "@/components/ui/button";
+import { TypingEffect } from "./typing-effect";
 
 export function Header() {
+  const headlines = ["Software Engineer", "Building AI Agents", "Programmer"];
+
   return (
-    <section id="home" className="relative bg-[#121212] text-white overflow-hidden">
+    <section id="home" className="relative bg-[#121212] text-white overflow-hidden pb-0">
       <div 
           className="absolute inset-0 z-0" 
           style={{
@@ -18,7 +21,7 @@ export function Header() {
               Hello<span className="text-[#E4602F]">.</span><br />
               I&apos;m {portfolioData.name.split(' ')[0]}
             </h1>
-            <h2 className="text-4xl md:text-5xl font-semibold text-white/90">{portfolioData.title}</h2>
+            <TypingEffect headlines={headlines} className="text-4xl md:text-5xl font-semibold text-white/90" />
             <div className="flex items-center gap-4 pt-4">
               <Button asChild size="lg" className="bg-[#E4602F] text-white hover:bg-[#d35420]">
                 <a href="mailto:kiranreddy.b0408@gmail.com">Let's Collaborate</a>
