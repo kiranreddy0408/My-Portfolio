@@ -24,10 +24,10 @@ export function Header() {
         </div>
         <div className="relative h-[400px] md:h-[600px] mt-[-100px] md:mt-0">
           <div className="absolute inset-0 flex justify-center items-center">
-            <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full border-2 border-primary/30" />
-            <div className="absolute w-[250px] h-[250px] md:w-[450px] md:h-[450px] rounded-full bg-background" style={{backgroundImage: 'radial-gradient(circle, hsl(var(--card) / 0.5) 0%, hsl(var(--background)) 70%)'}} />
-             <ChevronLeft className="absolute top-1/3 left-4 md:left-16 text-primary/50 size-16 md:size-24 transform -translate-y-1/2" strokeWidth={1} />
-            <ChevronRight className="absolute bottom-1/3 right-4 md:right-16 text-primary/50 size-16 md:size-24 transform translate-y-1/2" strokeWidth={1} />
+            <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full border-4 border-primary/20" />
+            <div className="absolute w-[250px] h-[250px] md:w-[450px] md:h-[450px] rounded-full" style={{backgroundImage: 'radial-gradient(circle, hsl(var(--primary) / 0.1) 0%, hsl(var(--background)) 70%)'}} />
+             <ChevronLeft className="absolute top-1/3 left-4 md:left-16 text-primary/30 size-16 md:size-24 transform -translate-y-1/2" strokeWidth={1} />
+            <ChevronRight className="absolute bottom-1/3 right-4 md:right-16 text-primary/30 size-16 md:size-24 transform translate-y-1/2" strokeWidth={1} />
           </div>
           <div className="absolute inset-0 flex justify-center items-end">
             <Image
