@@ -7,10 +7,16 @@ export function cn(...inputs: ClassValue[]) {
 
 
 export function useScrollTo() {
-  const scrollTo = (id: string) => {
+  const scrollTo = (id: string, offset = 80) => { // Default offset for h-20 navbar
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   };
   return scrollTo;
