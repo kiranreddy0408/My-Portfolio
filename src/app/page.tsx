@@ -6,6 +6,7 @@ import { About } from "@/components/portfolio/about";
 import { Navbar } from "@/components/portfolio/navbar";
 import { SkillsMarquee } from "@/components/portfolio/skills-marquee";
 import { Footer } from "@/components/portfolio/footer";
+import { ResumeSummaryGenerator } from "@/components/portfolio/resume-summary";
 
 export default function PortfolioPage() {
   return (
@@ -13,12 +14,13 @@ export default function PortfolioPage() {
       <Navbar />
       <main className="flex-grow">
         <Header />
-        <SkillsMarquee />
         <div className="container mx-auto max-w-6xl p-4 sm:p-6 lg:p-8 space-y-20 md:space-y-28">
-          <About />
           <Projects />
-          <Experience />
+          <SkillsMarquee />
           <SkillsAndEducation />
+          <About />
+          <Experience />
+          <ResumeSummaryGenerator />
         </div>
       </main>
       <Footer />
