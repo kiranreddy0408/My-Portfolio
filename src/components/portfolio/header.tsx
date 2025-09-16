@@ -27,7 +27,7 @@ export function Header() {
             <TypingEffect headlines={headlines} className="text-3xl md:text-5xl font-semibold text-white/90" />
             <div className="flex items-center justify-center md:justify-start gap-4 pt-4">
               <Button asChild size="lg">
-                <a href="mailto:kiranreddy.b0408@gmail.com">Let's Collaborate</a>
+                <a href={`mailto:${portfolioData.contact.email}`}>Let's Collaborate</a>
               </Button>
               <Button asChild variant="outline" size="lg">
                 <a href="/kiranreddy_resume.pdf" target="_blank" rel="noopener noreferrer">My resume</a>
