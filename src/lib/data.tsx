@@ -1,4 +1,4 @@
-import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon, ExternalLink } from 'lucide-react';
+import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon, ExternalLink, Sparkles } from 'lucide-react';
 import { FaJava } from 'react-icons/fa';
 import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiLangchain, SiPostgresql, SiOpenai } from 'react-icons/si';
 
@@ -82,12 +82,7 @@ const skillIcons = {
       <path d="m9 17-1-1" />
     </svg>
   ),
-  gemini: (props: any) => (
-    <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
-      <path d="M12 18V9" />
-    </svg>
-  ),
+  gemini: (props: any) => <Sparkles size={iconSize} {...props} />,
   chromadb: (props: any) => (
     <svg xmlns="http://www.w3.org/2000/svg" width={iconSize} height={iconSize} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
       <path d="M7 7h10v10H7z" />
