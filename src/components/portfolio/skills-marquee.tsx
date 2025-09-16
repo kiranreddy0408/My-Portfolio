@@ -2,6 +2,7 @@
 
 import { skillsData } from "@/lib/data";
 import { cn } from "@/lib/utils";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 const allSkills = Object.values(skillsData).flat();
 
@@ -17,19 +18,15 @@ export function SkillsMarquee() {
   };
 
   return (
-    <div className="py-4 bg-card/50 w-full overflow-hidden">
-      <div className="flex w-max animate-marquee hover:[animation-play-state:paused]">
-        <div className="flex flex-shrink-0">
+    <div className="py-2 bg-card/50 w-full">
+      <ScrollArea className="w-full whitespace-nowrap">
+        <div className="flex w-max p-4">
           {allSkills.map((skill, index) => (
             <MarqueeItem key={`marquee1-${index}`} skill={skill} />
           ))}
         </div>
-        <div className="flex flex-shrink-0">
-          {allSkills.map((skill, index) => (
-            <MarqueeItem key={`marquee2-${index}`} skill={skill} />
-          ))}
-        </div>
-      </div>
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
     </div>
   );
 }
