@@ -1,4 +1,4 @@
-import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon } from 'lucide-react';
+import { Briefcase, FolderGit2, GraduationCap, Award, Code, Mail, Phone, MapPin, Linkedin, Github, User, Code2, AppWindow, Database, LucideIcon, ExternalLink } from 'lucide-react';
 import { FaJava } from 'react-icons/fa';
 import { SiFastapi, SiFlask, SiReact, SiNodedotjs, SiHtml5, SiCss3, SiJavascript, SiTypescript, SiTailwindcss, SiGit, SiGithub, SiDocker, SiPostman, SiPython, SiLangchain, SiPostgresql, SiOpenai } from 'react-icons/si';
 
@@ -178,22 +178,34 @@ export const portfolioData = {
   ],
   projects: [
     {
+      id: "vizagent",
       title: "VizAgent",
       tech: ["FastAPI", "Gemini", "LangChain", "Plotly"],
       description: "An intelligent analytics agent that empowers users to talk to their data. VizAgent translates plain English into complex SQL queries, fetching and visualizing insights instantly. With over 90% query accuracy, it reduces data analysis time by 70%, making data-driven decisions accessible to everyone.",
-      github: "https://github.com/kiranreddy0408", 
+      github: "https://github.com/kiranreddy0408/VizAgent",
+      liveUrl: "https://vizagent.example.com",
+      imageUrl: "vizagent-screenshot",
+      imageHint: "data analytics dashboard"
     },
     {
+      id: "todo-summary",
       title: "Todo Summary Agent",
       tech: ["React", "Node.js", "Slack", "Gemini"],
       description: "Cutting through the clutter of daily tasks. This full-stack productivity tool uses the Gemini LLM to intelligently summarize your to-do list and delivers a concise, actionable digest directly to your Slack, ensuring you focus on what truly matters.",
-      github: "https://github.com/kiranreddy0408",
+      github: "https://github.com/kiranreddy0408/Todo-Summary-Agent",
+      liveUrl: "https://todosummary.example.com",
+      imageUrl: "todo-summary-screenshot",
+      imageHint: "productivity app interface"
     },
     {
+      id: "eduelite",
       title: "EduElite (1st Prize, National AI Hackathon)",
       tech: ["AI", "React", "Node.js"],
       description: "A prize-winning prototype for the future of personalized education. This AI-powered platform delivers adaptive quizzes, an interactive AI tutor, and mock interviews, creating a dynamic learning journey that boosted user engagement by up to 40%.",
-      github: "https://github.com/kiranreddy0408",
+      github: "https://github.com/kiranreddy0408/EduElite",
+      liveUrl: "https://eduelite.example.com",
+      imageUrl: "eduelite-screenshot",
+      imageHint: "education platform"
     },
   ],
   education: [
