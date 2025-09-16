@@ -30,7 +30,7 @@ export function Header() {
                 <a href="mailto:kiranreddy.b0408@gmail.com">Let's Collaborate</a>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <a href="/Kiran_Reddy_Boojala_Resume.pdf" download>My resume</a>
+                <a href="/kiranreddy_resume.pdf" target="_blank" rel="noopener noreferrer">My resume</a>
               </Button>
             </div>
             <div className="flex items-center justify-center md:justify-start gap-2 pt-4">
