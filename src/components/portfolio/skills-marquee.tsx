@@ -1,6 +1,7 @@
 'use client';
 
 import { skillsData } from "@/lib/data";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 
 const allSkills = Object.values(skillsData).flat();
 
@@ -9,26 +10,25 @@ export function SkillsMarquee() {
     const Icon = skill.icon;
     return (
       <div className="flex items-center gap-2 md:gap-4 mx-2 md:mx-4 p-2 md:p-3 bg-card rounded-lg border border-border flex-shrink-0">
-        <Icon className="size-6 md:size-8 text-primary" />
-        <span className="text-base md:text-lg font-semibold">{skill.name}</span>
+        <Icon className="size-5 md:size-6 text-primary" />
+        <span className="text-sm md:text-base font-semibold">{skill.name}</span>
       </div>
     );
   };
 
   return (
-    <div className="py-8 bg-card/50 overflow-hidden relative group w-full">
-      <div className="flex animate-marquee group-hover:[animation-play-state:paused]">
-          <div className="flex flex-shrink-0">
+    <div className="py-8 bg-card/50 w-full">
+       <ScrollArea className="w-full whitespace-nowrap">
+        <div className="flex w-max space-x-4 p-4 animate-marquee hover:[animation-play-state:paused]">
             {allSkills.map((skill, index) => (
               <MarqueeItem key={`marquee1-${index}`} skill={skill} />
             ))}
-          </div>
-          <div className="flex flex-shrink-0">
             {allSkills.map((skill, index) => (
               <MarqueeItem key={`marquee2-${index}`} skill={skill} />
             ))}
-          </div>
-      </div>
+        </div>
+        <ScrollBar orientation="horizontal" />
+      </ScrollArea>
     </div>
   );
 }
