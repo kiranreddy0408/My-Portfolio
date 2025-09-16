@@ -17,7 +17,7 @@ export function SkillsMarquee() {
   };
 
   return (
-    <div className="py-8 bg-card/50 w-full">
+    <div className="py-4 bg-card/50 w-full">
        <ScrollArea className="w-full whitespace-nowrap">
         <div className="flex w-max space-x-4 p-4 animate-marquee hover:[animation-play-state:paused]">
             {allSkills.map((skill, index) => (
