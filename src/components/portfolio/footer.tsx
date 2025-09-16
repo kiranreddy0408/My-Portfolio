@@ -1,4 +1,4 @@
-import { portfolioData, contactIcons } from "@/lib/data.tsx";
+import { portfolioData, contactIcons } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 
 export function Footer() {

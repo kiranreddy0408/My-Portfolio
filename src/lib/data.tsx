@@ -122,7 +122,7 @@ export const skillsData: Record<string, { name: string; icon: (props: any) => JS
     { name: "LangChain", icon: skillIcons.langchain },
     { name: "RAG", icon: skillIcons.rag },
     { name: "Agentic Workflows", icon: skillIcons.agents },
-    { name: "Vector Stores", icon: skillIcons.vectorstores },
+    // { name: "Vector Stores", icon: skillIcons.vectorstores },
   ],
   "DevOps Tools": [
     { name: "Git", icon: skillIcons.git },
@@ -167,7 +167,7 @@ export const portfolioData = {
       role: "Software Developer Intern",
       company: "One Convergence Devices Pvt. Ltd",
       duration: "March 2023 – May 2024",
-      location: "Hyderabad, India",
+      location: "Remote",
       points: [
         "Engineered and optimized full-stack web applications, architecting solutions that slashed bugs by 70% and significantly boosted overall performance.",
         "Architected robust API and database integrations for systems handling over 1000 records, cutting server response time by 30% through efficient data processing.",
@@ -190,30 +190,30 @@ export const portfolioData = {
     {
       id: "vizagent",
       title: "VizAgent",
-      tech: ["FastAPI", "Gemini", "LangChain", "Plotly"],
+      tech: ["FastAPI", "Gemini","PostgresSQL", "LangChain", "Plotly"],
       description: "An intelligent analytics agent that empowers users to talk to their data. VizAgent translates plain English into complex SQL queries, fetching and visualizing insights instantly. With over 90% query accuracy, it reduces data analysis time by 70%, making data-driven decisions accessible to everyone.",
       github: "https://github.com/kiranreddy0408/VizAgent",
-      liveUrl: "https://vizagent.example.com",
+      liveUrl: "https://github.com/kiranreddy0408/VizAgent",
       imageUrl: "vizagent-screenshot",
       imageHint: "data analytics dashboard"
     },
     {
       id: "todo-summary",
       title: "Todo Summary Agent",
-      tech: ["React", "Node.js", "Slack", "Gemini"],
+      tech: ["React", "Node.js","PostgresSQL", "Slack", "Gemini"],
       description: "Cutting through the clutter of daily tasks. This full-stack productivity tool uses the Gemini LLM to intelligently summarize your to-do list and delivers a concise, actionable digest directly to your Slack, ensuring you focus on what truly matters.",
-      github: "https://github.com/kiranreddy0408/Todo-Summary-Agent",
-      liveUrl: "https://todosummary.example.com",
+      github: "https://github.com/kiranreddy0408/todo-ai-agent",
+      liveUrl: "https://todo-ai-agent.vercel.app",
       imageUrl: "todo-summary-screenshot",
       imageHint: "productivity app interface"
     },
     {
       id: "eduelite",
       title: "EduElite (1st Prize, National AI Hackathon)",
-      tech: ["AI", "React", "Node.js"],
+      tech: ["AI", "Flask", "Gemini"],
       description: "A prize-winning prototype for the future of personalized education. This AI-powered platform delivers adaptive quizzes, an interactive AI tutor, and mock interviews, creating a dynamic learning journey that boosted user engagement by up to 40%.",
-      github: "https://github.com/kiranreddy0408/EduElite",
-      liveUrl: "https://eduelite.example.com",
+      github: "https://github.com/kiranreddy0408/LearnwithGemini/tree/main/prototypeV1",
+      liveUrl: "https://kiranreddy.pythonanywhere.com",
       imageUrl: "eduelite-screenshot",
       imageHint: "education platform"
     },

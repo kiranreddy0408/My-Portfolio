@@ -1,4 +1,4 @@
-import { portfolioData } from "@/lib/data.tsx";
+import { portfolioData } from "@/lib/data";
 import { Section } from "./section";
 
 export function About() {

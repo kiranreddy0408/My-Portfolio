@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from "react";
-import { portfolioData } from "@/lib/data.tsx";
+import { portfolioData } from "@/lib/data";
 import { placeholderImages } from "@/lib/placeholder-images";
 import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
