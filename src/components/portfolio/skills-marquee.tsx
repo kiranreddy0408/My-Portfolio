@@ -1,5 +1,6 @@
 'use client';
 
+import Marquee from "react-fast-marquee";
 import { skillsData } from "@/lib/data";
 
 const allSkills = Object.values(skillsData).flat();
@@ -16,19 +17,12 @@ export function SkillsMarquee() {
   };
 
   return (
-    <div className="py-2 bg-card/50 w-full overflow-hidden">
-      <div className="flex animate-marquee group-hover:[animation-play-state:paused] whitespace-nowrap">
-          <div className="flex flex-shrink-0">
-            {allSkills.map((skill, index) => (
-              <MarqueeItem key={`marquee1-${index}`} skill={skill} />
-            ))}
-          </div>
-          <div className="flex flex-shrink-0">
-            {allSkills.map((skill, index) => (
-              <MarqueeItem key={`marquee2-${index}`} skill={skill} />
-            ))}
-          </div>
-      </div>
+    <div className="py-2 bg-card/50">
+      <Marquee pauseOnHover={true} speed={40}>
+        {allSkills.map((skill, index) => (
+          <MarqueeItem key={index} skill={skill} />
+        ))}
+      </Marquee>
     </div>
   );
 }
