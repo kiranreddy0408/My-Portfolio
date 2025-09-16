@@ -3,10 +3,10 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: "Kiran's Showcase",
+  title: "Kiran Reddy Boojala",
   description: "Portfolio of Kiran Reddy Boojala",
   icons: {
-    icon: '/pfp4.png',
+    icon: '/pfpicon.png',
   },
 };
 
