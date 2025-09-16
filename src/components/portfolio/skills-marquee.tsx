@@ -8,9 +8,9 @@ export function SkillsMarquee() {
   const MarqueeItem = ({ skill }: { skill: (typeof allSkills)[0] }) => {
     const Icon = skill.icon;
     return (
-      <div className="flex items-center gap-4 mx-4 p-3 bg-card rounded-lg border border-border flex-shrink-0">
-        <Icon className="size-8 text-primary" />
-        <span className="text-lg font-semibold">{skill.name}</span>
+      <div className="flex items-center gap-2 md:gap-4 mx-2 md:mx-4 p-2 md:p-3 bg-card rounded-lg border border-border flex-shrink-0">
+        <Icon className="size-6 md:size-8 text-primary" />
+        <span className="text-base md:text-lg font-semibold">{skill.name}</span>
       </div>
     );
   };
