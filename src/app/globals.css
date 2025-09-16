@@ -77,3 +77,8 @@ body {
     100% { transform: translateX(-100%); }
   }
 }
+
+/* Hide Next.js debug button */
+[data-nextjs-scroll-focus-boundary] {
+  display: none !important;
+}
