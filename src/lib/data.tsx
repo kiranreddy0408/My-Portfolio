@@ -131,7 +131,7 @@ export const portfolioData = {
   name: "Kiran Reddy Boojala",
   title: "AI Agent Developer",
   about: {
-    description: "My fascination isn't just with writing code; it's with creating intelligent systems that solve real-world problems. I'm a Software Developer with a core focus on Artificial Intelligence, driven to build autonomous agents and intuitive applications that can reason, learn, and adapt. This passion for innovation led my team and me to win 1st Prize in a National Level AI Hackathon for our personalized learning platform. I thrive on transforming complex challenges into elegant, efficient, and intelligent software solutions.",
+    description: "As a Software Developer, I'm passionate about building AI-powered applications that solve real-world problems. This drive culminated in winning 1st Place at a National AI Hackathon. I enjoy the entire process of creation, from a complex idea to an intelligent and functional product.",
     stats: [
       { value: "1+", label: "Years of experience" },
       { value: "5+", label: "Completed Projects" },
