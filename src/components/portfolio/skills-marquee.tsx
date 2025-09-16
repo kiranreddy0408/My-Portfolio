@@ -14,14 +14,18 @@ export function SkillsMarquee() {
   };
 
   return (
-    <div className="py-8 bg-card/50 overflow-hidden relative group">
+    <div className="py-8 bg-card/50 overflow-hidden relative group w-full">
       <div className="flex animate-marquee group-hover:[animation-play-state:paused]">
-        {allSkills.map((skill, index) => (
-          <MarqueeItem key={`marquee1-${index}`} skill={skill} />
-        ))}
-        {allSkills.map((skill, index) => (
-          <MarqueeItem key={`marquee2-${index}`} skill={skill} />
-        ))}
+          <div className="flex flex-shrink-0">
+            {allSkills.map((skill, index) => (
+              <MarqueeItem key={`marquee1-${index}`} skill={skill} />
+            ))}
+          </div>
+          <div className="flex flex-shrink-0">
+            {allSkills.map((skill, index) => (
+              <MarqueeItem key={`marquee2-${index}`} skill={skill} />
+            ))}
+          </div>
       </div>
     </div>
   );
