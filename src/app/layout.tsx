@@ -5,6 +5,9 @@ import { Toaster } from '@/components/ui/toaster';
 export const metadata: Metadata = {
   title: "Kiran's Showcase",
   description: "Portfolio of Kiran Reddy Boojala",
+  icons: {
+    icon: '/pfp4.png',
+  },
 };
 
 export default function RootLayout({
