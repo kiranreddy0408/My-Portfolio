@@ -6,7 +6,10 @@ export const metadata: Metadata = {
   title: "Kiran Reddy Boojala",
   description: "Portfolio of Kiran Reddy Boojala",
   icons: {
-    icon: '/pfpicon.png',
+    icon: '/pfp4.png',
+  },
+  openGraph: {
+    images: '/portfolio-preview.png',
   },
 };
 
