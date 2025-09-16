@@ -22,8 +22,9 @@ export function ProjectDetails({ project }: ProjectDetailsProps) {
             <Image
               src={placeholder.imageUrl}
               alt={`Screenshot of ${project.title}`}
-              fill
-              className="object-cover"
+              width={600}
+              height={400}
+              className="object-cover w-full h-full"
               data-ai-hint={placeholder.imageHint}
             />
           </div>

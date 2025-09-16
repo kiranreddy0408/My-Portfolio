@@ -7,9 +7,7 @@ import Image from "next/image";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "./section";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Github, ExternalLink } from "lucide-react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { ProjectDetails } from "./project-details";
 
 export function Projects() {
@@ -32,8 +30,9 @@ export function Projects() {
                     <Image
                       src={placeholder.imageUrl}
                       alt={`Screenshot of ${project.title}`}
-                      fill
-                      className="object-cover"
+                      width={600}
+                      height={400}
+                      className="object-cover w-full h-full"
                       data-ai-hint={placeholder.imageHint}
                     />
                   </div>
